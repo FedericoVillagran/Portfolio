@@ -1,14 +1,4 @@
 @font-face {
-  src: url("../fonts/PlayfairDisplay-Regular.ttf");
-  font-family:"PlayfairDisplay-Regular";
-}
-
-@font-face {
-  src: url(../fonts/PlayfairDisplay-Medium.ttf);
-  font-family:"PlayfairDisplay-Regular";
-}
-
-@font-face {
   font-family: "JosefinSans-Regular";
   src: url(../fonts/JosefinSans-Regular.ttf);
 }
@@ -18,6 +8,16 @@
   src: url(../fonts/JosefinSans-Medium.ttf);
 }
 
+@font-face {
+  font-family: "Oxygen-Regular";
+  src: url(../fonts/Oxygen-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Oxygen-Bold";
+  src: url(../fonts/Oxygen-Bold.ttf);
+}
+
 
 body {
   background-color: #0A0A0A;
@@ -25,7 +25,7 @@ body {
 }
 
 button{
-font-family: 'PlayfairDisplay-Regular';
+font-family: 'Oxygen-Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -55,10 +55,11 @@ nav {
   background-color: #0a0a0a;
   height: fit-content;
   z-index: 1;
+  font-family: "Oxygen-Regular";
 }
 
 h1 {
-  font-family: 'Playfair Display';
+  font-family: 'Oxygen-Regular';
 font-style: normal;
 font-weight: 400;
 font-size: 52px;
@@ -78,7 +79,7 @@ letter-spacing: 0.12em;
 
 h3 {
   color: white;
-  font-family: 'Merriweather';
+  font-family: 'Oxygen-Regular';
 font-style: normal;
 font-weight: 400;
 font-size: 25.9259px;
@@ -87,7 +88,7 @@ line-height: 33px;
 
 h4 {
   color: white;
-  font-family: 'JosefinSans-Medium';
+  font-family: 'Oxygen-Regular';
   padding-top: 80px;
 }
 
@@ -99,15 +100,27 @@ main {
 
 p {
   color: white;
+  font-family: "Oxygen-regular";
+}
+
+button {
+  font-family: "Oxygen-Regular";
+}
+
+a {
+  font-family: "Oxygen-Regular";
 }
 
 .about {
-font-family: 'Inter';
-font-style: normal;
+font-family: 'Oxygen-Regular';
 font-weight: 500;
 font-size: 26.2507px;
 line-height: 32px;
 letter-spacing: 0.235em;
+}
+
+.about p {
+  font-family: "Oxygen-Regular";
 }
 
 .about-me {
@@ -126,7 +139,10 @@ letter-spacing: 0.235em;
   display: flex;
   justify-content: space-between;
   padding-top: 48px;
+}
 
+.center p {
+  font-family: "Oxygen-Regular";
 }
 
 .center-text {
@@ -152,6 +168,7 @@ letter-spacing: 0.235em;
   .navbar {
     width: 80%;
     padding-left: 130px;
+    font-family: "Oxygen-Regular";
   }
 
 .abaut {
@@ -160,7 +177,7 @@ letter-spacing: 0.235em;
 
 .about p {
   line-height: 25px;
-  font-family: 'Inter';
+  font-family: 'Oxygen-Regular';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
@@ -209,20 +226,21 @@ letter-spacing: 0.11em;
 .index h3 {
   padding-top: 50px;
   padding-bottom: 120px;
+  font-family: "Oxygen-Regular";
 }
 
 .justify-center {
   display: flex;
-  justify-content: center;
-  align-items: center; 
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  margin: 0 auto;
+  font-family: "Oxygen-Regular";
 }
 
 .parragraff-black {
   color: black;
-  font-family: 'Inter';
+  font-family: 'Oxygen-Regular';
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
@@ -243,7 +261,6 @@ letter-spacing: 0.005em;
 
 .nav-links {
   color: white;
-  font-family: 'JosefinSans-Medium';
   display: flex;
   gap: 40px;
 }
@@ -251,6 +268,8 @@ letter-spacing: 0.005em;
 .nav-links a {
   text-decoration: none;
   color: white;
+ font-size: medium;
+ font-family: "Oxygen-Regular";
 }
 
 .nav-links a:hover {
