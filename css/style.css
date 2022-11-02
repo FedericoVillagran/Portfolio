@@ -146,7 +146,7 @@ letter-spacing: 0.235em;
 }
 
 .center-text {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .centro {
@@ -233,7 +233,7 @@ letter-spacing: 0.11em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
   gap: 20px;
   font-family: "Oxygen-Regular";
 }
@@ -255,7 +255,7 @@ letter-spacing: 0.005em;
 
 .projects {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-bottom: 100px;
 }
 
