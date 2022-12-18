@@ -4,122 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<!-- Open Graph / Facebook --> <!-- this is what Facebook and other social websites will draw on -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.federicovillagran.com/">
-<meta property="og:title" content="PORTFOLIO_FV">
-<meta property="og:description" content="Portfolio_Federico_Villagran">
-<meta property="og:image" content="https://www.federicovillagran.com/images/Logo-FV.png">
-
-<!-- Twitter --> <!-- You can have different summary for Twitter! -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://www.federicovillagran.com/">
-<meta property="twitter:title" content="PORTFOLIO_FV">
-<meta property="twitter:description" content="Portfolio_Federico_Villagran">
-<meta property="twitter:image" content="https://www.federicovillagran.com/images/Logo-FV.png">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XJZG2XHGG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5XJZG2XHGG');
-</script>
-    <title> Federico Villagran UX/UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Federico Villagran UX/UI</title>
 </head>
 <body>
-    <header>
-        <nav class="container navbar">
-        <div>
-            <a href="index.html"><img src="images/Logo-FV.png" alt="Logo-FV" height="65px" width="65"></a>
-        </div>
-        <div class="nav-links">
-            <a href="#PROJECTS">PROJECTS</a>
-            <a href="about.html">ABOUT</a>
-            <a href="#CONTACT">CONTACT</a>
-        </div>
-        </nav>
-    </header>
-
-    <main>
-    <div class="index">
+    <section> <!-- section navbar-->
+        <header>
+            <nav class="navbar navbar-dark navbar-expand-lg sticky-top ">
+                <div class="container-fluid">
+                    <a href="index.html">
+                        <img src="images/Logo-FV.png" alt="Logo-FV" height="65px" width="65" class="logo-f"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0 list">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" aria-current="page" href="#Projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" aria-current="page" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" aria-current="page" href="#Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+             </nav>
+        </header>
+    </section>
+    
+    <section class="titles"> <!-- section big titles-->
         <h1>Understand the problem, optimize work processes to enhance user experiences and deliver products people love to use</h1>
+        <h3>I strive to build memorable products</h3>
+        <h5 id="Projects">Some of my works</h5>
+    </section>
 
-        <h3>I strive to build memorable products</h4>
-    </div>
-<div class="projects">
-<h4 class="center-text" id="PROJECTS">Some of my works</h4>
+    <section> <!-- section projects-->
+        <div className="container project">
+            <div class="row">
+                <div class="col">
+                    <div class="card pc mb-4" style="width: 15rem"> <!--card-1-->
+                        <a href=""><img src="images/Prontometal.png" alt="protomental" class="card-img-top" /></a>
+                        <div class="card-body project-bc">
+                            <h5 class="card-title">Prontometal website</h5>
+                            <p class="card-text text-secondary">Website redesign made for a Uruguayan storage and deposit company    </p>
+                            <p class="card-text text-secondary">UX/UI Work</p>
+                            <a href="https://www.figma.com/proto/sELBpZEyzJoJ0Kb8eoqVTP/Portfolio?page-id=38%3A2&node-id=340%3A3398&viewport=389%2C281%2C0.02&scaling=scale-down-width" target="_blank" class="btn btn-outline-dark mt-3">View case</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card pc mb-4" style="width: 15rem"> <!--card-2-->
+                        <a href="https://www.figma.com/proto/sELBpZEyzJoJ0Kb8eoqVTP/Portfolio?page-id=75%3A110&node-id=347%3A2028&viewport=1036%2C869%2C0.05&scaling=min-zoom&starting-point-node-id=347%3A2028" target="_blank"><img src="images/FAM.png" alt="FAM" class="card-img-top" /></a>
+                        <div class="card-body project-bc">
+                            <h5 class="card-title">Food As Medicine app</h5>
+                            <p class="card-text text-secondary">Nutrition app focused on informing people on how to use food as medicine</p>
+                            <p class="card-text text-secondary">UX/UI Poject</p>
+                            <div>
+                            <a href="https://www.figma.com/proto/sELBpZEyzJoJ0Kb8eoqVTP/Portfolio?page-id=75%3A110&node-id=347%3A2028&viewport=1036%2C869%2C0.05&scaling=min-zoom&starting-point-node-id=347%3A2028" target="_blank" class="btn btn-outline-dark mt-3">View case</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card pc mb-4" style="width: 15rem"> <!--card-3-->
+                        <a href=""><img src="images/Bauhaus.png" alt="Pachamama" class="card-img-top" /></a>
+                        <div class="card-body project-bc">
+                            <h5 class="card-title">Bauhaus article</h5>
+                            <p class="card-text text-secondary">Article made to tell in a short and visual way the Bauhaus story </p>
+                            <p class="card-text text-secondary">UI Poject</p>
+                            <a href="https://www.figma.com/proto/q1c0kbeS7mWwJPI6lI0VOL/Bauhaus?page-id=0%3A1&node-id=22%3A77&viewport=-68%2C-498%2C0.19&scaling=scale-down-width&starting-point-node-id=22%3A77" target="_blank" class="btn btn-outline-dark mt-3">View case</a>
+                        </div>
+                    </div>
+                </div>
+              </div>        
+            </div>
+    </section>
 
-<div class="center">
-    <div class="container-project" data-aos-duration='1000' data-aos="fade-up" data-aos-delay="ease">
-        <a href="https://www.figma.com/proto/sELBpZEyzJoJ0Kb8eoqVTP/Portfolio?page-id=38%3A2&node-id=340%3A3398&viewport=389%2C281%2C0.02&scaling=scale-down-width" target="_blank"><img src="images/Prontometal.png" alt="Food As Medicine" height="402px" width="269px" class="btn"></a>
-        <p>Prontometal website</p>
-        <p>UX/UI work</p>
-        <p>Website redesign made for a Uruguayan company</p>
-    </div>
-    <div class="container-project" data-aos-duration='1000' data-aos="fade-up" data-aos-easing="300">
-        <a href="https://www.figma.com/proto/sELBpZEyzJoJ0Kb8eoqVTP/Portfolio?page-id=75%3A110&node-id=347%3A2028&viewport=1036%2C869%2C0.05&scaling=min-zoom&starting-point-node-id=347%3A2028" target="_blank"><img src="images/FAM.png" alt="Food As Medicine" height="402px" width="269px" class="btn"></a>
-        <p>Food As Medicine app</p>
-        <p>UX/UI project</p>
-        <p>Nutrition app focused on informing people on how to use food as medicine</p>
-    </div>
-    <div class="container-project" data-aos-duration='1000' data-aos="fade-up" data-aos-delay="300">
-        <a href="https://www.figma.com/proto/sELBpZEyzJoJ0Kb8eoqVTP/Portfolio?page-id=75%3A110&node-id=352%3A2027&viewport=3543%2C2520%2C0.32&scaling=scale-down-width&starting-point-node-id=347%3A2028" target="_blank"><img src="images/Pachamama.png" alt="Pachamama" height="402px" width="269px" class="btn"></a>
-        <p>Pachamama website</p>
-        <p>UX/UI project</p>
-        <p>Charitable event to help the situation of forest fires in Spain</p>
-    </div>
-    </div>
-</div>
-
-<div class="container arround about-me">
-<div class="justify-center">
-    <h2>Hi i'm Federico</h2>
-    <p class="parragraff-black">A young entrepreneur  based in Madrid, passionate about design, about environmental care and always willing to face new challenges.
-    As a designer I love creating physical and digital products that transmit beauty and comfort.</p>
-    <p class="parragraff-black"> As a human I love talking to people and emphathizing with their context and behavior. When not designing you can find me playing music or somewhere near the ocean. </p>
-    <a href="about.html">
-        <button>Read more</button>
-    </a>
-</div>
-<div>
-    <img src="images/Foto-Mia.png" alt="Picture of Federico as barista" height="500px" width="406px">
-</div>
-</div>
-</main>
-
-<footer id="CONTACT">
-    <div> 
-        <a href="index.html"><img src="images/Logo-FV.png" alt="Flogo FV" height="74px" width="74px"></a>
-    </div>
-    <div class="footerContent">
-        <div>
-            <p>Get in Touch!</p>
+    <section> <!-- me-->
+        <div class="me">
+            <div class="card mb-3 me-c" style="max-width: 840px;">
+                <div class="row g-0">
+                  <div class="col-lg-4">
+                    <img src="images/Foto-Mia.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title mt-2">Hi i'm Federico</h5>
+                      <p class="card-text mt-4">A young entrepreneur  based in Madrid, passionate about design, about environmental care and always willing to face new challenges.
+                        As a designer I love creating physical and digital products that transmit beauty and comfort.</p>
+                      <p>As a human I love talking to people and emphathizing with their context and behavior. When not designing you can find me playing music or somewhere near the ocean.</p>  
+                      <a href="about.html" class="card-text"><button class="btn btn-outline-dark mt-3">Read More</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
-        <div>
-            <a href="http://linkedin.com/in/federico-villagran/"><img src="images/Logo-Linkedin.png" alt="" height="32px" width="32px" taregt="_blank"> <p>linkedin.com/in/federico-villagran</p></a>
-        </div>
-        <div>
-            <a href="mailto:federico.villagran95@gmail.com"><img src="images/Logo-Mail.png" alt="" height="32px" width="32px" target="_blank"> <p>federico.villagran95@gmail.com</p></a>
-        </div>
-        <div>
-            <a href="tel:+34662689581"><img src="images/Logo-Phone.png" alt="" height="32px" width="32px" target="_blank"> <p>+34 662 689 581</p></a>
-        </div>
-    </div>
-</footer>
+    </section>
+
+    
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+    <section> <!-- footer -->
+        <footer class="mt-4 mb-3" id="Contact">
+        
+            <div class="container-fluid">
+                <div class="row ">    
+                    <div class="col">
+                        <a href="index.html">
+                         <img src="images/Logo-FV.png" alt="Logo-FV" height="65px" width="65" />
+                        </a>
+                    </div>     
+                <div class="col mt-4 get">
+                        <p class="text-light mt-1"">Get in Touch!</p>
+                    </div>
+                    <div class="col mt-4 socialm">
+                        <img src="images/Logo-Linkedin.png"/ alt="linkedin" height="30">
+                        <a href="http://linkedin.com/in/federico-villagran/" target="_blank">  
+                            <p class="text-light mt-1">/federico-villagran</p>
+                        </a>
+                    </div>
+                    <div class="col mt-4 socialm">
+                        <img src="images/Logo-Mail.png" alt="mail" height="30"/>
+                        <a href="mailto:federico.villagran95@gmail.com">
+                            <p class="text-light mt-1"">federico.villagran95@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="col mt-4 socialm">
+                        <img src="images/Logo-Phone.png" alt="phone" height="30"/>
+                        <a href="tel:+34662689581">
+                            <p class="text-light mt-1">+34 662 689 581</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
 </body>
 </html>
