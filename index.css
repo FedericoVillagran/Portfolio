@@ -352,7 +352,7 @@ a.icon-container {
     gap: 4px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 746px) {
 
     .titles {
         padding: 70px 0px;
