@@ -3,29 +3,29 @@
 @font-face {
     font-family: "JosefinSans-Regular";
     src: url(fonts/JosefinSans-Regular.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "JosefinSans-Medium";
     src: url(fonts/JosefinSans-Medium.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Oxygen-Regular";
     src: url(fonts/Oxygen-Regular.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Oxygen-Bold";
     src: url(fonts/Oxygen-Bold.ttf);
-  }
-  
+}
+
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Oxygen-Regular";
-  }
+}
 
 body {
     background-color: #0A0A0A;
@@ -72,7 +72,7 @@ body {
 
 .titles h1 {
     color: white;
-    font-style: normal; 
+    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 57px;
@@ -109,10 +109,11 @@ body {
 .pc {
     margin-left: 40px;
     margin-top: 0px;
+    flex: 1;
 }
 
 .card-body {
-color: white;
+    color: white;
 }
 
 .btn-project {
@@ -140,20 +141,20 @@ color: white;
     color: #0A0A0A;
 }
 
-.me-c {
-    margin-left: 20px;
+.me-card {
+    max-width: 846px;
 }
 
 /* footer */
 
-  .socialm {
+.socialm {
     display: flex;
     flex-direction: row;
     gap: 5%;
     margin-left: 10px;
-    
-  }
-  
+
+}
+
 .socialm a {
     text-decoration: none;
 }
@@ -196,6 +197,7 @@ color: white;
     flex-direction: column;
     padding-bottom: 20px;
 }
+
 .tool img {
     padding: 0px 40px;
 }
@@ -224,27 +226,27 @@ color: white;
 
 .button {
     transition-duration: 0.4s;
-  }
-  
-  .button:hover {
-    background-color:white;
-    color: black;
-  }
+}
 
-  .columna-2 {
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.columna-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .r {
+.r {
     display: flex;
     justify-content: center;
-    
-  }
-  
-  .columna-1 p {
+
+}
+
+.columna-1 p {
     line-height: 25px;
     font-style: normal;
     font-weight: 400;
@@ -253,18 +255,123 @@ color: white;
     text-align: justify;
     letter-spacing: 0.11em;
     padding: 10px;
-    
-  }
 
-  .columna-2 h3 {
+}
+
+.columna-2 h3 {
     color: white;
     font-style: normal;
     font-weight: 400;
     font-size: 25.9259px;
     line-height: 33px;
 
-  }
+}
 
-  .columna-2 img {
+.columna-2 img {
     padding: 10px;
-  }
+}
+
+.titles h1 {
+    width: 50%;
+}
+
+.titles h3 {
+    text-align: center;
+}
+
+section.titles {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container.project .card-img-top {
+    object-fit: contain;
+    padding: 48px;
+    max-height: 260px;
+}
+
+.titles {
+    min-height: 694px;
+}
+
+.media-icon {
+    transition: all 0.3s;
+    fill: white;
+}
+
+.bi-linkedin:hover {
+    fill: #0077B5;
+}
+
+.envelope-container {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 0px 2px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.telephone-container {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 0px 2px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.bi-envelope {
+    fill: black;
+}
+
+.bi-telephone {
+    fill: black;
+}
+
+.bi-envelope:hover {
+    fill: #D44638;
+}
+
+.bi-telephone:hover {
+    fill: #25D366;
+}
+
+a.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
+}
+
+@media screen and (max-width: 840px) {
+
+    .titles {
+        padding: 70px 0px;
+    }
+
+    .titles h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container.project {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pc {
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
