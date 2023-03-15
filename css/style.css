@@ -24,8 +24,8 @@ body {
   padding-top: 10%
 }
 
-button{
-font-family: 'Oxygen-Regular';
+button {
+  font-family: 'Oxygen-Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -40,7 +40,7 @@ font-family: 'Oxygen-Regular';
 
 button:hover {
   color: white;
-  background-color:black;
+  background-color: black;
   transition: 300ms
 }
 
@@ -60,30 +60,30 @@ nav {
 
 h1 {
   font-family: 'Oxygen-Regular';
-font-style: normal;
-font-weight: 400;
-font-size: 52px;
-line-height: 69px;
-color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 69px;
+  color: white;
 }
 
 h2 {
   font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 25.2474px;
-line-height: 40px;
-text-align: center;
-letter-spacing: 0.12em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25.2474px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.12em;
 }
 
 h3 {
   color: white;
   font-family: 'Oxygen-Regular';
-font-style: normal;
-font-weight: 400;
-font-size: 25.9259px;
-line-height: 33px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25.9259px;
+  line-height: 33px;
 }
 
 h4 {
@@ -112,11 +112,11 @@ a {
 }
 
 .about {
-font-family: 'Oxygen-Regular';
-font-weight: 500;
-font-size: 26.2507px;
-line-height: 32px;
-letter-spacing: 0.235em;
+  font-family: 'Oxygen-Regular';
+  font-weight: 500;
+  font-size: 26.2507px;
+  line-height: 32px;
+  letter-spacing: 0.235em;
 }
 
 .about p {
@@ -163,13 +163,13 @@ letter-spacing: 0.235em;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  }
+}
 
-  .navbar {
-    width: 80%;
-    padding-left: 130px;
-    font-family: "Oxygen-Regular";
-  }
+.navbar {
+  width: 80%;
+  padding-left: 130px;
+  font-family: "Oxygen-Regular";
+}
 
 .abaut {
   gap: 80px;
@@ -178,12 +178,12 @@ letter-spacing: 0.235em;
 .about p {
   line-height: 25px;
   font-family: 'Oxygen-Regular';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-text-align: justify;
-letter-spacing: 0.11em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+  letter-spacing: 0.11em;
 }
 
 .container-project {
@@ -196,12 +196,12 @@ letter-spacing: 0.11em;
 
 .container a {
   font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-text-align: justify;
-letter-spacing: 0.11em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  letter-spacing: 0.11em;
 }
 
 .container-project p {
@@ -210,18 +210,19 @@ letter-spacing: 0.11em;
 }
 
 .container-project img {
-  width: 100%;;
+  width: 100%;
+  ;
 }
-  
+
 .container-row {
   display: flex;
   flex-direction: column;
-  }
+}
 
 .index {
-    padding-top: 40px;
-    height: 337px ;
-  }
+  padding-top: 40px;
+  height: 337px;
+}
 
 .index h3 {
   padding-top: 50px;
@@ -233,7 +234,7 @@ letter-spacing: 0.11em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 20px;
   font-family: "Oxygen-Regular";
 }
@@ -241,12 +242,12 @@ letter-spacing: 0.11em;
 .parragraff-black {
   color: black;
   font-family: 'Oxygen-Regular';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 155%;
-text-align: justify;
-letter-spacing: 0.005em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 155%;
+  text-align: justify;
+  letter-spacing: 0.005em;
 }
 
 .padd-bottom {
@@ -268,8 +269,8 @@ letter-spacing: 0.005em;
 .nav-links a {
   text-decoration: none;
   color: white;
- font-size: medium;
- font-family: "Oxygen-Regular";
+  font-size: medium;
+  font-family: "Oxygen-Regular";
 }
 
 .nav-links a:hover {
