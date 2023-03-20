@@ -40,8 +40,11 @@ section {
 /* section navbar */
 
 .navbar {
-    padding: 0 2%;
     top: 0;
+}
+
+.navbar>div {
+    padding-left: 0px !important;
 }
 
 .container-fluid {
