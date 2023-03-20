@@ -29,7 +29,11 @@
 
 body {
     background-color: #0A0A0A;
-    margin: 1% 5%;
+}
+
+
+section {
+    padding: 2rem;
 }
 
 
