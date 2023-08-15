@@ -1,0 +1,411 @@
+/* Reset some default styles */
+body, h1, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #000;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Navbar ---------------------------------------------------------------- */
+
+/* General navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed; /* Fixed to the top of the screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    max-width: 70%; /* Set maximum width to 70% */
+    margin: 0 auto; /* Center the navbar horizontally */
+    border-radius: 10px;
+}
+
+.navbar-logo img {
+    max-height: 40px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Burger menu styles for mobile */
+.navbar-burger {
+    display: none; /* Hide by default on desktop screens */
+    flex-direction: column;
+    cursor: pointer;
+    color: #474747;
+}
+
+.navbar-burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #474747;
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links on mobile */
+    }
+
+    .navbar-burger {
+        display: flex; /* Show burger menu on mobile */
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .navbar.show-links .navbar-links {
+        display: flex; /* Show links when burger menu is clicked */
+        flex-direction: column;
+        background-color: #000000;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+}
+
+/* Video --------------------------------------------------------------- */
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the height as needed */
+    overflow: hidden;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+
+
+/* Big Titles styles ------------------------------------------------- */
+.big-titles {
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
+
+.title {
+    width: 60%; /* Set the width to 50% */
+    font-size: 45px; /* Adjust font size as needed */
+}
+
+.subtitle {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        width: 85%;
+        font-size: 26px;
+    }
+}
+
+
+/* Projects Section styles ----------------------------------------------- */
+.projects {
+    margin-top: 50px;
+}
+
+.projects h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.container.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding-right: 50px;
+}
+
+.card {
+    display: flex;
+    width: 310px;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    border-radius: 29px;
+    border: 2px solid #474747;
+    background: linear-gradient(137deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.10) 51.77%, rgba(255, 255, 255, 0.04) 100%);
+    backdrop-filter: blur(30px);
+    padding: 16px;
+}
+
+@media (max-width: 768px) {
+    .container.projects {
+        flex-direction: column; /* Stack cards in a column on mobile */
+        align-items: center; /* Align cards to the left on mobile */
+        padding-right: 0; /* Remove right padding on mobile */
+    }
+}
+
+    .card {
+        width: 210px; /* Cards take full width on mobile */
+        margin-bottom: 20px; /* Add spacing between cards */
+        padding: 20px; /* Add padding around cards for better spacing */
+    }
+
+
+.card img {
+    max-height: 100px;
+}
+
+button {
+    display: flex;
+    height: 40px;
+    padding: 21px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid #474747;
+    background: none;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Set font weight to bold */
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change to a lighter color on hover */
+}
+
+
+.img-container {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 40%;
+}
+
+/* About Card Section styles ------------------------------------------------ */
+.about-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 800px;
+}
+
+.about-image {
+    width: 40%;
+    height: auto;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px; /* Apply round corners to the image container */
+
+}
+
+.about-content {
+    width: 70%;
+    padding-left: 30px; /* Adjust this as needed for spacing */
+}
+
+.card-text {
+    margin-top: 16px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+    }
+    .about-content {
+        padding: 10px;
+        text-align: left;
+        align-items: center;
+
+        }
+}
+
+/* Footer Section styles ----------------------------------------------------- */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer-column {
+    flex: 0 0 calc(50% - 10px); /* Equal width for two columns, adjust as needed */
+    padding: 5px;
+}
+
+.footer-logo img {
+    width: 50px; /* Adjust the logo size as needed */
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 100%; /* Full width for each column on mobile */
+        padding: 5px;
+    }
+
+    .footer {
+        justify-content: flex-start; /* Start alignment on mobile */
+    }
+}
+
+
+/* ABOUT --------------------------------------------------------------------------------------------------------*/
+
+.intro-me h3 {
+    padding-top: 140px;
+}
+
+.intro-me img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;
+    padding: 80px 0px;
+    border-radius: 20px;
+}
+
+
+/* Hobbies section -------------------------------------------- */ 
+
+.hobbies-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hobbies-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.left-column {
+    flex: 1;
+    padding: 10px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+.right-column {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hobbies-container {
+        flex-direction: column; /* Switch to column layout on mobile */
+        align-items: center; /* Center both columns horizontally on mobile */
+    }
+
+    .left-column,
+    .right-column {
+        padding: 10px;
+        text-align: center; /* Center text content on mobile */
+    }
+
+    .right-column {
+        margin-top: 20px; /* Add some space between the columns */
+    }
+}
+
+/* Tools -------------------------- */
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Adjust as needed */
+    padding: 80px 0;
+}
+
+.tools img {
+    height: 40vh;
+}
+
+
+/* cv ------------------------------ */
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
