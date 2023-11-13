@@ -181,11 +181,15 @@ body {
     }
 }
 
-    .card {
+.card {
         width: 210px; /* Cards take full width on mobile */
         margin-bottom: 20px; /* Add spacing between cards */
         padding: 20px; /* Add padding around cards for better spacing */
     }
+
+.card h3 {
+    margin-top: 10px;
+}
 
 
 .card img {
